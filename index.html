@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExPorto – Garment Export</title>
+  <link rel="icon" type="image/png" href="https://i.imgur.com/8eYmY3K.png">
+    <meta name="description" content="ExPorto – Trusted global supplier of branded stocklot garments & custom apparel production for Europe, America & Korea.">
+  <meta property="og:title" content="ExPorto – Garment Exporter from Bangladesh">
+  <meta property="og:description" content="Original branded garments & custom orders. Serving buyers in Europe, America & more.">
+  <meta property="og:image" content="https://i.imgur.com/7tWXagR.png">
+  <meta property="og:url" content="https://www.yourdomain.com/index.html">
+  <meta name="robots" content="index, follow">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .section,
+.offer-section,
+.product-section,
+.testimonials,
+.destinations,
+.trusted-logos,
+.why-choose {
+  max-width: 100%;
+  padding: 40px 10px;
+}
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 20px;
+    }
+    .navbar .logo img {
+      height: 50px;
+    }
+    .navbar nav {
+      display: flex;
+      gap: 25px;
+    }
+    .navbar nav a {
+      text-decoration: none;
+      color: #004aad;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .navbar nav a:hover {
+      color: #e60023;
+    }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: #004aad;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+    @media (max-width: 768px) {
+      .navbar nav {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      }
+      .navbar nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
+    .hero-banner {
+  margin-top: 80px;
+      background: url('https://imgur.com/J7nFpCS.jpg') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 25px;
+      border-radius: 8px;
+    }
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+    .section p {
+      color: #444;
+      font-size: 1.1rem;
+    }
+    .offer-section {
+      background-color: #f4f4f4;
+    }
+    .offer-item {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .offer-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+    .offer-item h3 {
+      font-size: 1.2rem;
+      color: #004aad;
+    }
+    .offer-item p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .what-we-do {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .service-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .service-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-content {
+      padding: 20px;
+    }
+    .service-content h3 {
+      font-size: 1.2rem;
+      color: #004aad;
+    }
+    .service-content p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .service-icon {
+      font-size: 28px;
+      color: #004aad;
+      margin-top: 15px;
+    }
+    .service-box:hover .service-icon {
+      color: #e60023;
+    }
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 20px;
+    }
+    .destination-box {
+      width: 150px;
+      transition: transform 0.3s ease;
+    }
+    .destination-box:hover {
+      transform: scale(1.1);
+    }
+    .destination-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .destination-box p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .testimonials {
+      background: #f9f9f9;
+      padding: 60px 20px;
+    }
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial .client {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #004aad;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="https://imgur.com/6PBHm6g.png" alt="ExPorto Logo" />
+        </a>
+      </div>
+      <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="product.html">Product</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= Premium Banner Section Start ======= -->
+<style>
+    .hero-banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero-banner img.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* মোবাইলের জন্য ব্যানারের উচ্চতা কমিয়ে দিন */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+
+  .hero-content img {
+    max-width: 140px;
+  }
+}
+    .hero-banner img.bg-slide:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .hero-banner img.bg-slide:nth-child(2) {
+        animation-delay: 6s;
+    }
+
+    .hero-banner img.bg-slide:nth-child(3) {
+        animation-delay: 12s;
+    }
+
+    @keyframes fade {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        30% { opacity: 1; }
+        40% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+
+    .hero-content img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        color: #fff;
+        font-size: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 12px 25px;
+        border-radius: 8px;
+        animation: slideIn 2s ease-in-out;
+    }
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -70%);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+</style>
+
+<div class="hero-banner">
+    <!-- Background Slideshow Images -->
+    <img src="https://i.imgur.com/gRrQ7ax.jpg" class="bg-slide" alt="Banner 1">
+    <img src="https://i.imgur.com/69Plucq.jpg" class="bg-slide" alt="Banner 2">
+    <img src="https://via.placeholder.com/1200x400.png?text=Banner+3" class="bg-slide" alt="Banner 3">
+
+    <!-- Logo & Heading -->
+    <div class="hero-content">
+        <img src="https://imgur.com/zx6nlmn.png" alt="ExPorto Logo">
+        <h1>100% Original Stocklot & Fresh Orders</h1>
+    </div>
+</div>
+<!-- ======= Premium Banner Section End ======= -->
+
+  <section class="section">
+    <h2>Welcome to ExPorto</h2>
+    <p>We supply original branded stocklot garments worldwide, especially in Europe and America. We also take fresh orders under your own brand with full production, quality control, and delivery support.</p>
+  </section>
+
+  <section class="offer-section section">
+  <!-- ======= What We Offer Section Start ======= -->
+<section class="offer-section section">
+  <h2 class="offer-title">What We Offer</h2>
+  <div class="owl-carousel offer-carousel">
+    
+    <!-- Offer 1 -->
+    <div class="offer-item">
+      <img src="https://i.imgur.com/43qVmKm.jpg" alt="Stocklot Garments" />
+      <div class="offer-content">
+        <h3>Stocklot Garments</h3>
+        <p>100% original branded garments – Men's, Women's & Kids – for bulk export worldwide.</p>
+      </div>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-item">
+      <img src="https://i.imgur.com/f6Ev38w.jpg" alt="Fresh Order Production" />
+      <div class="offer-content">
+        <h3>Fresh Order Production</h3>
+        <p>We handle complete manufacturing under your brand with quality control & timely delivery.</p>
+      </div>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="offer-item">
+      <img src="https://i.imgur.com/8kcLDRO.jpg" alt="Factory Sourcing" />
+      <div class="offer-content">
+        <h3>Factory Sourcing</h3>
+        <p>We connect you with top factories across Bangladesh to fulfill customized needs.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- Owl Carousel Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".offer-carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 3 }
+      }
+    });
+  });
+</script>
+
+<style>
+.offer-section {
+  background: #f8f9fc;
+  padding: 60px 20px;
+  text-align: center;
+}
+.offer-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #004aad;
+  margin-bottom: 40px;
+}
+.offer-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.offer-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+.offer-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.offer-content {
+  padding: 20px;
+}
+.offer-content h3 {
+  color: #004aad;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.offer-content p {
+  color: #555;
+  font-size: 0.95rem;
+}
+</style>
+<!-- ======= What We Offer Section End ======= -->
+
+  <section class="section">
+<!-- Product Categories Section Start -->
+<section class="product-section">
+  <div class="container">
+    <h2 class="section-title">What We Do</h2>
+    <div class="product-grid">
+
+      <!-- Category 1 -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/bieO4Qq.jpg" alt="Women's Products">
+        <div class="card-content">
+          <h3>WOMEN'S PRODUCTS</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/YyYLuIs.jpg" alt="Men's Products">
+        <div class="card-content">
+          <h3>MEN'S PRODUCTS</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/TQ44NgS.jpg" alt="Children's Products">
+        <div class="card-content">
+          <h3>CHILDREN'S PRODUCTS</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/JwoF7OT.jpg" alt="Home Textiles">
+        <div class="card-content">
+          <h3>HOME TEXTILES</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Category 5 -->
+      <div class="product-card">
+        <img src="https://i.imgur.com/rjuAZyt.jpg" alt="Fashion Accessories">
+        <div class="card-content">
+          <h3>FASHION ACCESSORIES</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Category 6 -->
+      <div class="product-card">
+        <img src="https://imgur.com/5juRFxu.jpg" alt="Leather Products">
+        <div class="card-content">
+          <h3>LEATHER PRODUCTS</h3>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Product Categories Section End -->
+
+<style>
+.product-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e60000;
+  margin-bottom: 40px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+}
+.card-content .icon {
+  font-size: 30px;
+  color: #e60000;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+.card-content a {
+  font-size: 14px;
+  color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-content a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
+<style>
+/* Product Categories Section */
+.product-categories {
+  padding: 60px 20px;
+  background-color: #f4f8fc;
+  text-align: center;
+}
+.product-categories .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-categories h2 {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.category-box {
+  background-color: white;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #003366;
+  transition: all 0.3s ease;
+}
+.category-box:hover {
+  background-color: #003366;
+  color: white;
+  transform: translateY(-5px);
+}
+.category-box .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.category-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.category-box p {
+  font-size: 14px;
+}
+</style>
+<section class="section">
+  <h2>Our Export Destinations</h2>
+  <div class="destinations">
+    <div class="destination-box">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag">
+      <p>India</p>
+    </div>
+    <div class="destination-box">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France Flag">
+      <p>France</p>
+    </div>
+    <div class="destination-box">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany Flag">
+      <p>Germany</p>
+    </div>
+    <div class="destination-box">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italy Flag">
+      <p>Italy</p>
+    </div>
+    <div class="destination-box">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag">
+      <p>USA</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.destination-box {
+  width: 150px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.destination-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.destination-box:hover {
+  transform: scale(1.1);
+}
+
+.destination-box p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ✅ মোবাইলের জন্য ২টা করে সাইড বাই সাইড দেখাবে */
+@media (max-width: 576px) {
+  .destination-box {
+    width: 45%;
+  }
+}
+</style>
+
+
+<!-- Trusted by Section -->
+<section class="section" style="background: #f9f9f9;">
+  <h2>Trusted By</h2>
+  <p style="text-align: center; margin-bottom: 30px;">Top international buyers who work with us</p>
+  <div class="trusted-logos">
+    <img src="https://i.imgur.com/dSCVkPE.png" alt="Ralph Lauren">
+    <img src="https://i.imgur.com/3rAw8Aq.png" alt="Tommy Hilfiger">
+    <img src="https://i.imgur.com/hjxDhXn.png" alt="Hugo Boss">
+    <img src="https://i.imgur.com/IZysKgc.png" alt="Calvin Klein">
+    <img src="https://i.imgur.com/gGxZ5h8.png" alt="Lacoste">
+  </div>
+</section>
+<section data-aos="fade-up">
+  <h2 class="section-title">Certifications & Compliance</h2>
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Oeko-tex-logo.svg" alt="OEKO-TEX" style="height: 60px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/BSCI_Logo.svg" alt="BSCI" style="height: 60px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Sedex-logo.svg" alt="SEDEX" style="height: 60px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/GOTS_Logo.svg" alt="GOTS" style="height: 60px;">
+  </div>
+</section>
+
+<style>
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+.trusted-logos img {
+  max-height: 50px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s;
+}
+.trusted-logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+</style>
+
+<section class="section">
+  <h2>Why Choose ExPorto?</h2>
+  <div class="why-choose">
+    <div class="why-box">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Trusted Source</h3>
+      <p>Years of experience delivering original branded garments.</p>
+    </div>
+    <div class="why-box">
+      <i class="fas fa-industry"></i>
+      <h3>Strong Factory Network</h3>
+      <p>Direct production & quality control from large factories.</p>
+    </div>
+    <div class="why-box">
+      <i class="fas fa-globe"></i>
+      <h3>Global Reach</h3>
+      <p>Exporting to Europe, USA, Middle East, and more.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.why-choose {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 20px;
+}
+.why-box {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.why-box i {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+.why-box h3 {
+  color: #004aad;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+</style>
+
+<style>
+.mvc-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+.mvc-box {
+  flex: 1 1 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.mvc-box h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+.mvc-box ul {
+  list-style: none;
+  padding: 0;
+}
+.mvc-box ul li {
+  padding: 5px 0;
+  color: #444;
+}
+</style>
+
+<style>
+.counter-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.counter-box {
+  text-align: center;
+}
+.counter-box h3 {
+  font-size: 2rem;
+  color: #004aad;
+}
+.counter-box p {
+  font-size: 1rem;
+  color: #444;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    let start = 0;
+    const end = parseInt(counter.getAttribute("data-count"));
+    const duration = 2000;
+    const increment = end / (duration / 30);
+    function updateCounter() {
+      start += increment;
+      if (start < end) {
+        counter.innerText = Math.floor(start);
+        setTimeout(updateCounter, 30);
+      } else {
+        counter.innerText = end;
+      }
+    }
+    updateCounter();
+  });
+});
+</script>
+
+
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial"><p>“ExPorto has delivered top-quality branded garments consistently. Their professionalism and timely deliveries make them a reliable partner.”</p><div class="client">— John D., USA</div></div>
+    <div class="testimonial"><p>“We’ve been working with ExPorto for years and have always found them trustworthy and efficient. Highly recommended!”</p><div class="client">— Marie T., France</div></div>
+  </section>
+
+  <a href="https://wa.me/8801918711071" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" />
+  </a>
+
+  <footer style="background-color: #0f0f25; color: #fff; padding: 60px 20px 30px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+    
+    <!-- Company Info -->
+    <div style="flex: 1 1 250px;">
+      <img src="https://i.imgur.com/7tWXagR.png" alt="ExPorto Logo" style="width: 160px; margin-bottom: 20px;" />
+      <p style="line-height: 1.7;">
+        ExPorto is your trusted global partner for 100% original branded stocklot garments & custom fresh orders.
+        We proudly serve Europe, America, Korea & beyond.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="color: #ffcc00; margin-bottom: 15px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+        <li><a href="services.html" style="color: #fff; text-decoration: none;">Services</a></li>
+        <li><a href="product.html" style="color: #fff; text-decoration: none;">Product</a></li>
+        <li><a href="media.html" style="color: #fff; text-decoration: none;">Media</a></li>
+        <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="color: #ffcc00; margin-bottom: 15px;">Contact Us</h3>
+      <p><strong>Address:</strong><br/> Road 12, Sector 12, Uttara, Dhaka-1230, Bangladesh</p>
+      <p><strong>Phone:</strong><br/> <a href="tel:+8801918711071" style="color: #fff; text-decoration: none;">+8801918711071</a></p>
+      <p><strong>Email:</strong><br/> <a href="mailto:info@exporto.com" style="color: #fff; text-decoration: none;">info@exporto.com</a></p>
+    </div>
+
+    <!-- Social Links -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="color: #ffcc00; margin-bottom: 15px;">Connect with Us</h3>
+      <div style="display: flex; gap: 12px;">
+        <a href="https://wa.me/8801918711071" target="_blank" title="WhatsApp">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" width="32" />
+        </a>
+        <a href="https://instagram.com/exporto" target="_blank" title="Instagram">
+          <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" width="32" />
+        </a>
+        <a href="https://t.me/exporto" target="_blank" title="Telegram">
+          <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram" width="32" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; border-top: 1px solid #444; margin-top: 40px; padding-top: 15px; font-size: 14px;">
+    &copy; 2025 <strong>ExPorto</strong>. All rights reserved. Powered by experience & trust.
+  </div>
+</footer>
+
+</body>
+</html>
